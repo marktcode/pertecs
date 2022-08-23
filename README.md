@@ -22,6 +22,6 @@ To compile for Mac
 #-mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk
 cc -mmacosx-version-min=10.5 -isysroot /Developer/SDKs/MacOSX10.5.sdk -lexpat -lm -framework vecLib -framework OpenGL -framework GLUT pertecs_main.c pertecs_trace.c spod_surface.c spod_display.c pertecs_init.c pertecs_modules.c pertecs_trees.c pertecs_entropy.c pertecs_xml.c  pertecs_connections_xml.c mkfilter.c complex.c pertecs_OSC.c htmsocket.c OSC_client.c OSC_timeTag.c -O3 -o pertecs
 
-#for the pi
+To compile for the pi
 cc -lexpat -lm -lpthread -lglut -lGLU -lGL -lm -ffast-math -lX11 -lXext -lXt -lSM -lICE pertecs_main.c pertecs_init.c pertecs_modules.c pertecs_trees.c pertecs_entropy.c pertecs_xml.c  pertecs_connections_xml.c spod_display.c spod_surface.c pertecs_trace.c mkfilter.c complex.c pertecs_OSC.c htmsocket.c OSC_client.c OSC_timetag.c -O3 -o pertecs -lbcm2835
 
